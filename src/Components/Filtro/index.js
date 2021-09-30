@@ -7,7 +7,6 @@ export const Filtro = ({ products }) => {
 
   const pesquisar = () => {
     const filtred = products.filter((item) => item.code === Number(filtroName));
-    console.log(filtred);
     setItemFiltrado(filtred);
   };
 
