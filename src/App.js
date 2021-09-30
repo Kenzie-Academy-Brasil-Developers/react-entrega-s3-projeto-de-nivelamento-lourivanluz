@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Display } from "./Components/Display";
+import { Filtro } from "./Components/Filtro";
 import { Form } from "./Components/Form";
 import { ProductList } from "./Components/ProductList";
 
@@ -36,6 +37,7 @@ function App() {
       <Display products={products} />
       <Form setProducts={setProducts} products={products} />
       <ProductList products={products} />
+      <Filtro products={products} />
     </div>
   );
 }
